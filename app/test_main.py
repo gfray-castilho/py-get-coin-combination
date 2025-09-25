@@ -1,6 +1,7 @@
 import pytest
 from app.main import get_coin_combination
 
+
 @pytest.mark.parametrize(
     "cents, expected",
     [
@@ -16,6 +17,7 @@ def test_get_coin_combination(cents, expected):
     assert get_coin_combination(cents) is expected
     assert isinstance (get_coin_combination(cents), list)
     assert len(expected) == 4
+
 
 @pytest.mark.parametrize("bad_input",
                          [
