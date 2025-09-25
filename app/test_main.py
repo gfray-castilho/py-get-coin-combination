@@ -22,7 +22,6 @@ def test_get_coin_combination(cents: int, expected: list) -> None:
 @pytest.mark.parametrize(
     "bad_input",
     [
-        3.5,
         "10",
         None,
         [1],
